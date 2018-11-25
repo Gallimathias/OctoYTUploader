@@ -2,24 +2,27 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Text;
 
 namespace YTUploader.Thumbnail
 {
     public class ThumbnailGenerator
     {
-        private readonly Image baseBmp;
+        private readonly Bitmap baseBmp;
 
         public ThumbnailGenerator()
         {
-            baseBmp = Image.FromFile("octoawesome.png");
+            baseBmp = new Bitmap(Image.FromFile(@".\octoawesome.png"));
         }
 
         public Image GenerateThumbnail(string version)
         {
-            Brush b = new SolidBrush(Color.FromArgb(255, 36, 163, 179));
-            var pen = new Pen(Color.Black, 10);
-            using (var g = Graphics.FromImage(new Bitmap(baseBmp)))
+            var bmp = new Bitmap(baseBmp);
+
+            using (var b = new SolidBrush(Color.FromArgb(255, 36, 163, 179)))
+            using (var pen = new Pen(Color.Black, 10))
+            using (var g = Graphics.FromImage(bmp))
             {
                 var p = new GraphicsPath();
                 p.AddString(
@@ -31,7 +34,7 @@ namespace YTUploader.Thumbnail
                     new StringFormat());
                 g.DrawPath(pen, p);
                 g.FillPath(b, p);
-                return baseBmp;
+                return bmp;
             }
         }
     }
