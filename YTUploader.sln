@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoThumbnailGenerator", "O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeUploader", "YoutubeUploader\YoutubeUploader.csproj", "{FB1411A3-8A1F-45E8-934B-36912A7A375E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YTUploader.Core", "YTUploader.Core\YTUploader.Core.csproj", "{CD160F53-8EC7-48C7-BA38-0F9A7BA0855B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YTUploader.Thumbnail", "YTUploader.Thumbnail\YTUploader.Thumbnail.csproj", "{C215033B-278B-4FB8-970D-F4FA8DD54662}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FB1411A3-8A1F-45E8-934B-36912A7A375E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1411A3-8A1F-45E8-934B-36912A7A375E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1411A3-8A1F-45E8-934B-36912A7A375E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD160F53-8EC7-48C7-BA38-0F9A7BA0855B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD160F53-8EC7-48C7-BA38-0F9A7BA0855B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD160F53-8EC7-48C7-BA38-0F9A7BA0855B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD160F53-8EC7-48C7-BA38-0F9A7BA0855B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C215033B-278B-4FB8-970D-F4FA8DD54662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C215033B-278B-4FB8-970D-F4FA8DD54662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C215033B-278B-4FB8-970D-F4FA8DD54662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C215033B-278B-4FB8-970D-F4FA8DD54662}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
