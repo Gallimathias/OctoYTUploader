@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
-using YTUploader.Thumbnail;
+using YTUploader.Core;
 
 namespace OctoThumbnailGenerator
 {

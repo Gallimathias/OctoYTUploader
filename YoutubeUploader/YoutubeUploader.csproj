@@ -61,10 +61,6 @@
       <Project>{CD160F53-8EC7-48C7-BA38-0F9A7BA0855B}</Project>
       <Name>YTUploader.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\YTUploader.Thumbnail\YTUploader.Thumbnail.csproj">
-      <Project>{C215033B-278B-4FB8-970D-F4FA8DD54662}</Project>
-      <Name>YTUploader.Thumbnail</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Google.Apis.YouTube.v3">

@@ -5,7 +5,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Text;
 
-namespace YTUploader.Thumbnail
+namespace YTUploader.Core
 {
     public class ThumbnailGenerator
     {

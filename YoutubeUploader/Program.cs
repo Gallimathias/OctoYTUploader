@@ -12,7 +12,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using YTUploader.Core;
-using YTUploader.Thumbnail;
 
 namespace YoutubeUploader
 {

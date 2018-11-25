@@ -36,7 +36,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,9 +51,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YTUploader.Thumbnail\YTUploader.Thumbnail.csproj">
-      <Project>{c215033b-278b-4fb8-970d-f4fa8dd54662}</Project>
-      <Name>YTUploader.Thumbnail</Name>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>4.5.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YTUploader.Core\YTUploader.Core.csproj">
+      <Project>{cd160f53-8ec7-48c7-ba38-0f9a7ba0855b}</Project>
+      <Name>YTUploader.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
