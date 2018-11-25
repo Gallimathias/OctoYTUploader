@@ -4,18 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FB1411A3-8A1F-45E8-934B-36912A7A375E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>YoutubeUploader</RootNamespace>
-    <AssemblyName>YoutubeUploader</AssemblyName>
+    <ProjectGuid>{C215033B-278B-4FB8-970D-F4FA8DD54662}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YTUploader.Graphics</RootNamespace>
+    <AssemblyName>YTUploader.Graphics</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -37,7 +34,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,36 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OctoThumbnailGenerator\OctoThumbnailGenerator.csproj">
-      <Project>{bf59b170-64d7-4a71-9f0c-ec6cead69f46}</Project>
-      <Name>OctoThumbnailGenerator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\YTUploader.Core\YTUploader.Core.csproj">
-      <Project>{CD160F53-8EC7-48C7-BA38-0F9A7BA0855B}</Project>
-      <Name>YTUploader.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\YTUploader.Thumbnail\YTUploader.Thumbnail.csproj">
-      <Project>{C215033B-278B-4FB8-970D-F4FA8DD54662}</Project>
-      <Name>YTUploader.Thumbnail</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Google.Apis.YouTube.v3">
-      <Version>1.36.1.1226</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>11.0.2</Version>
-    </PackageReference>
-    <PackageReference Include="System.ValueTuple">
-      <Version>4.5.0</Version>
-    </PackageReference>
+    <Compile Include="ThumbnailGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
